@@ -1,4 +1,3 @@
-
 import torch
 import torch.nn as nn
 import pywt
@@ -1258,3 +1257,4 @@ def reflect(x, minx, maxx):
     normed_mod = np.where(mod < 0, mod + rng_by_2, mod)
     out = np.where(normed_mod >= rng, rng_by_2 - normed_mod, normed_mod) + minx
     return np.array(out, dtype=x.dtype)
+
